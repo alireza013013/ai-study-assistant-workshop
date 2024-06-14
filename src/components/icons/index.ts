@@ -1,6 +1,7 @@
 export * from './AudioFileIcon'
 export * from './DescriptionIcon'
 export * from './DraftIcon'
+export * from './EditIcon'
 export * from './FolderIcon'
 export * from './ImageIcon'
 export * from './PdfFileIcon'

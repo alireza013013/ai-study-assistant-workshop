@@ -16,6 +16,9 @@ export type SearchProps = {
   onSelect?: SearchResultProps['onSelect']
 
   compact?: boolean
+
+  filters?: string[]
+  onHandleFilter: (nameFilter: string) => void
 }
 
 export const Search: React.FC<SearchProps> = ({
@@ -27,6 +30,8 @@ export const Search: React.FC<SearchProps> = ({
   selectedFiles,
   onSelect,
   compact,
+  filters,
+  onHandleFilter,
 }) => {
   return (
     <div className="flex flex-col">
@@ -41,6 +46,10 @@ export const Search: React.FC<SearchProps> = ({
         onChange={(e) => onQueryChange && onQueryChange(e.target.value)}
         onSubmit={() => {
           onSearch && onSearch(query || '')
+        }}
+        filters={filters}
+        onHandleActiveFilter={(nameFilter: string) => {
+          onHandleFilter(nameFilter)
         }}
       />
       <div>
