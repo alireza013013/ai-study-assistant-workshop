@@ -27,4 +27,4 @@ for pdf File because type is document, I changed type file to pdf so that I can 
 
 ## Edit Message
 
-if the icon for edit click change the message box to edittext and set the old text in this area. after edit text i send new text and index message to the Home Component. and then I send New Message To Server For get new response and new edit text and resposne add to messages.
+if the icon for edit click change the message box to edittext and set the old text in this area. after edit text i send new text and index message to the Home Component. and then I send New Message To Server For get new response and new edit text and response add to messages.
